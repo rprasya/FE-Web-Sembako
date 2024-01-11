@@ -1,0 +1,49 @@
+/* hero style start */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    background-color: #AED8AD;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+.hero > div > h1 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.hero > div > p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.hero > div > button {
+    background-color: #338A31;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.hero > div > button > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.hero > div > button:hover {
+    background-color: #2b742a;
+}
+
+.hero > div > button:active {
+    background-color: #338A31;
+}
+
+.hero > img {
+    width: 370px;
+}
+/* hero style end */

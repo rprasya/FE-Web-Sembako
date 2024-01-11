@@ -1,0 +1,64 @@
+/* selector style start */
+.selector {
+    width: 100%;
+    justify-content: start;
+    margin: 20px 0px 15px 30px;
+}
+/* selector style end */
+
+/* product list style start */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(25% - 20px); /* 25% untuk 4 kolom, dan dikurangkan 20px untuk margin */
+    height: 280px;
+    margin: 10px; /* Adjust margin as needed */
+    border: 1px solid rgb(97, 97, 97);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+section > div:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+
+section > div > h3 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+section > div > p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+section > div > img {
+    width: 150px;
+}
+
+section > div > button {
+    padding: 3px;
+    margin-top: 10px;
+}
+
+section > div > button:hover {
+    cursor: pointer;
+}
+
+section > div > button > i {
+    color: #1CD918;
+    margin-right: 5px;
+}
+/* product list style end */

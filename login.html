@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <header>
+        <h1><i class="fa-solid fa-cart-shopping"></i>Sembako</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="catalog.html">Catalog</a>
+          <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Login & SignUp start -->
+    <div class="container">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+
+      <!-- form login start -->
+      <div class="form-box login">
+        <h2>Login</h2>
+        <p>Welcome, Please enter your account!</p>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" required />
+          <label for="">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" required />
+          <label for="">Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label for=""><input type="checkbox" />Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <a href="./index.html">
+          <button type="submit" class="button">Login</button>
+        </a>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+        </div>
+      </div>
+      <!-- form login end -->
+
+      <!-- form signup start -->
+      <div class="form-box signup" id="signupForm">
+        <h2>Sign Up</h2>
+        <p>Welcome, Please enter your details!</p>
+        <form>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" name="username" id="signupUsername" required />
+            <label for="signupUsername">Full Name</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="email" name="email" id="signupEmail" required />
+            <label for="signupEmail">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" name="password" id="signupPassword" required />
+            <label for="signupPassword">Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label for="agreeCheckbox"><input type="checkbox" id="agreeCheckbox" required />I agree to the terms & conditions</label>
+          </div>
+          <button type="submit" class="button" id="signUpButton">Sign Up</button>
+        </form>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+        <div id="signupErrorMessage" class="error-message"></div>
+      </div>
+      <!-- form signup end -->
+    </div>
+    <!-- Login & SignUp end -->
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
